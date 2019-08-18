@@ -1,0 +1,37 @@
+<html>
+<title>
+    buyer page</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="designbuyer.css">
+    <script>
+    function func()
+        {
+            var x=document.getElementById("txt9").value;
+            var y=document.getElementById("txt8").value;
+            var z=document.getElementById("txt10").value;
+            if(z=="")
+                {
+            document.getElementById("p1").innerHTML="searching for the car "+x+" "+y;
+                }
+            else{
+                document.getElementById("p1").innerHTML="searching for the car "+x+" "+y+" of color "+z;
+            }
+            
+        }
+    </script>
+    </head>
+<body>
+    <div class="buybox">
+    <h1>Buy the car Here</h1>
+    <form>
+    <input type="text" id="txt8" placeholder="Enter the car model" required>
+    <input type="text" id="txt9" placeholder="Enter the car company" required>
+    <input type="text" id="txt10" placeholder="Enter the color of your required car">
+    <input type="text" id="txt11" placeholder="Enter your Address" required>
+    <input type="text" id="txt12" placeholder="Enter the phone number" required>
+        <input type="text" name="txt13" placeholder="Enter your mail-id" required>
+       <a href="home.html"><input type="button" name="l" value="Goto Home"></a> <input type="button" name="btn" value="Search" onclick="func()">
+    </form>
+        </div>
+    <p id="p1"></p>
+    </body></html>

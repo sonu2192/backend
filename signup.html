@@ -1,0 +1,52 @@
+<html>
+<title>
+    SignUp page</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="signupdesign.css">
+    <script>
+    function func()
+        {
+            var x=document.getElementById("txt10").value;
+            var y=document.getElementById("txt11").value;
+            if(x!=y)
+                {
+                    alert("Password mismatch error");
+                }
+            else{
+                alert("Successfully submitted");
+            }
+        }
+        function func1()
+        {
+            var k=document.getElementById("txt10");
+            if(k.type=="password")
+                {
+                  k.type="text";
+                }
+        }
+        function func2()
+        {
+            var k=document.getElementById("txt11");
+            if(k.type=="password")
+                {
+                  k.type="text";
+                }
+        }
+    </script>
+    </head>
+<body>
+    <div class="Signupbox">
+    <h1>SignUp Here</h1>
+    <form onsubmit="func()">
+    <input type="text" id="txt8" placeholder="Enter the first name" required>
+    <input type="text" id="txt9" placeholder="Enter the last name" required>
+    <input type="password" id="txt10" placeholder="Enter the password" required>
+        <input type="checkbox" id="c1" onclick="func1()">Show Password
+        <input type="password" id="txt11" placeholder="Confirm Password" required>
+        <input type="checkbox" id="c1" onclick="func2()">Show Password
+    <input type="text" id="txt12" placeholder="Enter the phone number" required>
+        <input type="text" id="txt13" placeholder="Enter your mail-id" required>
+        <input type="submit" id="btn" value="SignUp">
+    </form>
+        </div>
+    </body></html>

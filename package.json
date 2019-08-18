@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "0.0.1",
+  "description": "A guide to js programming",
+  "main": "P1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonu2192/backend.git"
+  },
+  "author": "Satya Keerth (somasatyakeerth2192@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonu2192/backend/issues"
+  },
+  "homepage": "https://github.com/sonu2192/backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

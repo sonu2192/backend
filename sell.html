@@ -1,0 +1,29 @@
+<html>
+<title>
+    Seller page</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="designseller.css">
+    </head>
+    <script>
+        function func()
+        {
+            var x=document.getElementById("txt9").value;
+            var y=document.getElementById("txt8").value;
+            alert("Your car "+x+" "+y+" is out for sale");
+        }
+    </script>
+<body>
+    <div class="Sellingbox">
+    <h1>Sell your car Here</h1>
+    <form onsubmit="func()">
+    <input type="text" id="txt8" placeholder="Enter the car model" required>
+    <input type="text" id="txt9" placeholder="Enter the car company" required>
+    <input type="text" id="txt10" placeholder="Enter the color of your car" required>
+    <input type="text" id="txt11" placeholder="Enter your Address" required>
+    <input type="text" id="txt12" placeholder="Enter the phone number" required>
+        <input type="text" id="txt13" placeholder="Enter your mail-id" required>
+        <input type="text" id="txt14" placeholder="Enter the price" required>
+        <a href="home.html"><input type="button" name="l" value="Goto Home"></a> <input type="submit" name="btn" value="Sell">
+    </form>
+        </div>
+    </body></html>

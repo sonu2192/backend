@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="logindesign.css"></head>
+    <script>
+        function func()
+        {
+            var x=document.getElementById("txt2").value;
+            var y=document.getElementById("txt3").value;
+            if(x=="")
+                {
+                    if(y=="")
+                        {
+                            alert("Enter the both user name and password");
+                        }
+                    else
+                    {
+                        alert("Enter the user name");
+                    }
+                }
+            else{
+                if(y=="")
+                        {
+                            alert("Enter the both and password");
+                        }
+                else{
+                    alert("Logged in successfully");
+                }
+            }
+        }
+    </script>
+<body>
+    <div class="loginbox">
+        <img src="img/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form onsubmit="func()">
+        <p>Username</p>
+        <input type="text" id="txt2" placeholder="Enter Username">
+            <p>Password</p>
+        <input type="password" id="txt3" placeholder="Enter Password">
+        <a href="home.html"><input type="button" name="l" value="Goto Home"></a><input type="submit" name="login" value="Login"><br><br><br><br><br><br><br>
+        <a href="signup.html">Don't have an account?</a></form>
+    </div>
+    </body></html>
