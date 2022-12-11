@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sonu2192/backend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
